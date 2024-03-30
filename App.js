@@ -23,8 +23,8 @@ export default function App() {
           <Stack.Screen name='About' component={About} />
           <Stack.Screen name='Contact' component={Contact} />
           <Stack.Screen name='Service' component={Service} />
-          {/* <Stack.Screen name='Question2' component={Question2} />
-          <Stack.Screen name='Question3' component={Question3} /> */}
+          <Stack.Screen name='Question2' component={Question2} />
+          <Stack.Screen name='Question3' component={Question3} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
