@@ -7,9 +7,13 @@ const productpageStyle = StyleSheet.create({
     marginHorizontal: 16,
   },
   productContainer: {
-    flexDirection: "row",
+    flex: 1,
+    flexDirection: "column",
     alignItems: "center",
     marginBottom: 20,
+  },
+  productInfo: {
+    flex: 1,
   },
   productImage: {
     width: 100,
@@ -21,6 +25,7 @@ const productpageStyle = StyleSheet.create({
     fontWeight: "bold",
   },
   productDescription: {
+    flexWrap: "wrap",
     fontSize: 14,
   },
   productPrice: {
@@ -28,6 +33,11 @@ const productpageStyle = StyleSheet.create({
   },
   productBrand: {
     fontSize: 14,
+  },
+  imageContainer: {
+    flex: 1,
+    marginTop: 10,
+    marginHorizontal: 8,
   },
 });
 
