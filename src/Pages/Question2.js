@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, View, Text, Image } from "react-native";
+import { FlatList, View, Text } from "react-native";
 import { userpageStyles } from "../StyleSheets";
+import { Image } from "expo-image";
 
 const Question2 = () => {
   const [users, setUsers] = useState([]);
@@ -29,7 +30,7 @@ const Question2 = () => {
   if (isLoading) return <Text>Loading...</Text>;
   if (error) return <Text>Error: {error}</Text>;
 
-  const renderItem = (item) => (
+  const renderItem = ({ item }) => (
     <View style={userpageStyles.item}>
       <Image source={{ uri: item.avatar }} style={userpageStyles.avatar} />
       <View style={userpageStyles.userInfo}>

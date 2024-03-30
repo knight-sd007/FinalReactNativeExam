@@ -32,7 +32,7 @@ const layoutStyle = StyleSheet.create({
     backgroundColor: "#2196F3",
   },
   button4: {
-    backgroundColor: "#FFEB3B",
+    backgroundColor: "#0F00FF",
   },
   button5: {
     backgroundColor: "#9C27B0",

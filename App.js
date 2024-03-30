@@ -1,5 +1,4 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -16,17 +15,15 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName='Menu'>
-          <Stack.Screen name='Menu' component={Menu} />
-          <Stack.Screen name='About' component={About} />
-          <Stack.Screen name='Contact' component={Contact} />
-          <Stack.Screen name='Service' component={Service} />
-          <Stack.Screen name='Question2' component={Question2} />
-          <Stack.Screen name='Question3' component={Question3} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Menu'>
+        <Stack.Screen name='Menu' component={Menu} />
+        <Stack.Screen name='About' component={About} />
+        <Stack.Screen name='Contact' component={Contact} />
+        <Stack.Screen name='Service' component={Service} />
+        <Stack.Screen name='Question2' component={Question2} />
+        <Stack.Screen name='Question3' component={Question3} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
